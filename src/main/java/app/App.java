@@ -1,9 +1,6 @@
 package app;
 
-  import app.enumeratedDataTypes.Day;
-  import app.enumeratedDataTypes.EnumDataType;
- import app.enumeratedDataTypes.EnumInSwitch;
-  import app.enumeratedDataTypes.EnumWithLoop;
+  import app.enumeratedDataTypes.*;
   import app.javaBasics.DataType;
  import javafx.scene.control.IndexRange;
 
@@ -22,6 +19,10 @@ public class App {
     EnumInSwitch enumInSwitch = new EnumInSwitch(Day.valueOf(str));
 //    enumInSwitch.dayIsLike();
         EnumWithLoop enumWithLoop = new EnumWithLoop();
-        enumWithLoop.enumWithLoop();
-  }
+//        enumWithLoop.enumWithLoop();
+
+        Color color = Color.RED;
+    System.out.println("color = " + color);
+    color.colorInfo();
+    }
 }
