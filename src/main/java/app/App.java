@@ -3,7 +3,8 @@ package app;
   import app.enumeratedDataTypes.Day;
   import app.enumeratedDataTypes.EnumDataType;
  import app.enumeratedDataTypes.EnumInSwitch;
- import app.javaBasics.DataType;
+  import app.enumeratedDataTypes.EnumWithLoop;
+  import app.javaBasics.DataType;
  import javafx.scene.control.IndexRange;
 
 
@@ -19,6 +20,8 @@ public class App {
 
       String str = "MONDAY";
     EnumInSwitch enumInSwitch = new EnumInSwitch(Day.valueOf(str));
-    enumInSwitch.dayIsLike();
+//    enumInSwitch.dayIsLike();
+        EnumWithLoop enumWithLoop = new EnumWithLoop();
+        enumWithLoop.enumWithLoop();
   }
 }
